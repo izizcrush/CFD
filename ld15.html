@@ -79,62 +79,66 @@
 
         /* 商品清單 */
         .productList{
-            width: 1020px;
-            margin: 50px auto 0px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .productList img{
-            width: 220px;
-            /* margin-top: 30px;
-            margin-left:30px; */
-        }
-        .productList li{
-            position: relative;
-            float:left;
-            width: 220px;
-            height: 350px;
-            margin-left: 10px;;
-            margin-right: 10px;
-            margin-bottom: 20px;
-            padding-right: 5px;
-            padding-left: 10px;
-            letter-spacing: 0.167em;
-        }        
-        .productList li h2{
-            /* font-weight: bold; */
-            color: rgb(218, 240, 231);
-            margin-bottom: 10px;
-            margin-top: 20px;
+        .productList .container{
+            display: flex;
             }
-        .productList li a{
+        .productList .container li{
+            margin: 5px;
+        }    
+        
+
+        .productList .product{
+            width: 240px;
+            margin-bottom: 40px;
+        }
+        .productList .product .img{
+            height: 240px;
+            width: 240px;
+        }
+        .productList .product a{
             
             text-decoration: none;
+            letter-spacing: 0.4em;
+        }
+        .productList .product h3{
+            padding-left: 5px;
+            margin-top: 5px;
+            font-size: 24px;
+            color: rgb(218, 240, 231);
+        }
+        .productList .product p{
+            padding-left: 5px;
+            margin-bottom: 8px;
+            margin-top: 5px;
+            letter-spacing: 0.2em;
+            font-size: 18px;
+            color: rgb(253, 227, 113);
+        }
+
+        .productList .product .cart{    
+            margin: auto;
         }    
-        .productList li span{
-            color: rgb(216, 212, 142);
-            font-size: 20px;
-        }            
-        /* .productList .like img{
-            width: 30px;
-            position: absolute;
-            bottom: 135px;
-            right: 10px; */
-        }
-        .productList .cart{
-            width: 100%;
+        .productList .product .cart img{
+            background-color: rgb(48, 65, 62);
             height: 40px;
-            margin: 10px 0px 10px 0px;
-            background-color: rgb(70, 92, 86);
+            width: 240px;
         }
-        /* .productList .cart img{
-            width: 30px;
-            position: absolute;
-            bottom: -5px;
-            left: 45%; */
-        }
+        .productList .product .like img{
+            height: 40px;
+            position: relative;
+            left: 190px;
+            bottom: 170px;
+        }    
+
 
         /* 更多商品按鈕上面距離 */
         .button-moreproduct {
-            height: 500px;
+            height: 100px;
             width: 100%;
         }
         .button-moreproduct a{
@@ -151,12 +155,11 @@
             clear: left;
         }
                 /* 精選組合 */
-                .featured-product{
+            .featured-product{
             width: 100%;
             height: 60px;
             color: rgb(218, 240, 231);
-            
-            display: flex;
+             display: flex;
             justify-content: center;
             align-items: center;
             }
@@ -219,7 +222,7 @@
                 <a href="#">全部商品</a>
                 <a href="#">精選組合</a>
                 <a href="#">粉絲回圖</a>
-                <a href="#">使用方法</a>
+                <a href="movie.html">使用方法</a>
                 <a href="#">產品由來</a>
                 <a href="#" class="login">登入</a>
             </nav>
@@ -253,91 +256,106 @@
     </div>
 
     <div class="productList">
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="product">
+                         <a href="#">
+                         <img src="/img/image/0003.jpg" class="img" alt="product01">
+                         </a>
+                         <a href="#">
+                         <h3>簡約圖案</h3>
+                         </a>
+                         <p>199NT$</p>
+                         <div class="cart">
+                             <a href="#">
+                             <img src="img/icon/cart-w.svg"  alt="cart">
+                             </a>
+                         </div>
+                         <div class="like">
+                             <a href="#">
+                             <img src="img/icon/heart-w.svg"  alt="like">
+                             </a>
+                         </div>                    
+                     </div>
+                 </li>
+                <li>
+             </ul>
+             <ul>
+                <li>
+                    <div class="product">
+                         <a href="#">
+                         <img src="/img/image/0003.jpg" class="img" alt="product01">
+                         </a>
+                         <a href="#">
+                         <h3>簡約圖案</h3>
+                         </a>
+                         <p>199NT$</p>
+                         <div class="cart">
+                             <a href="#">
+                             <img src="img/icon/cart-w.svg"  alt="cart">
+                             </a>
+                         </div>
+                         <div class="like">
+                             <a href="#">
+                             <img src="img/icon/heart-w.svg"  alt="like">
+                             </a>
+                         </div>                    
+                     </div>
+                 </li>
+                <li>
+             </ul>
+             <ul>
+                <li>
+                    <div class="product">
+                         <a href="#">
+                         <img src="/img/image/0003.jpg" class="img" alt="product01">
+                         </a>
+                         <a href="#">
+                         <h3>簡約圖案</h3>
+                         </a>
+                         <p>199NT$</p>
+                         <div class="cart">
+                             <a href="#">
+                             <img src="img/icon/cart-w.svg"  alt="cart">
+                             </a>
+                         </div>
+                         <div class="like">
+                             <a href="#">
+                             <img src="img/icon/heart-w.svg"  alt="like">
+                             </a>
+                         </div>                    
+                     </div>
+                 </li>
+                <li>
+             </ul>
+             <ul>
+                <li>
+                    <div class="product">
+                         <a href="#">
+                         <img src="/img/image/0003.jpg" class="img" alt="product01">
+                         </a>
+                         <a href="#">
+                         <h3>簡約圖案</h3>
+                         </a>
+                         <p>199NT$</p>
+                         <div class="cart">
+                             <a href="#">
+                             <img src="img/icon/cart-w.svg"  alt="cart">
+                             </a>
+                         </div>
+                         <div class="like">
+                             <a href="#">
+                             <img src="img/icon/heart-w.svg"  alt="like">
+                             </a>
+                         </div>                    
+                     </div>
+                 </li>
+                <li>
+             </ul>
+
+        </div>
         
-        <ul>
-            <li>
-                <div class="like">
-                    <a href="#">
-                        <img src="/img/icon/heart-w.svg" alt="like">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="/img/image/0003.jpg" alt="product01">
-                </a>
-                <a href="#">
-                    <h2>簡約圖藤</h2>        
-                </a>
-                <span>200NT$</span>
-                <div class="cart">
-                    <a href="#">
-                        <img src="/img/icon/cart-w.svg" alt="cart">
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <div class="like">
-                    <a href="#">
-                        <img src="/img/icon/heart-w.svg" alt="like">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="/img/image/0004.jpg" alt="product02">
-                </a>
-                <a href="#">
-                    <h2>簡約圖藤</h2>        
-                </a>
-                <span>200NT$</span>
-                <div class="cart">
-                    <a href="#">
-                        <img src="/img/icon/cart-w.svg" alt="cart">
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <div class="like">
-                    <a href="#">
-                        <img src="/img/icon/heart-w.svg" alt="like">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="/img/image/0005.jpg" alt="product03">
-                </a>
-                <a href="#">
-                    <h2>簡約圖藤</h2>        
-                </a>
-                <span>200NT$</span>
-                <div class="cart">
-                    <a href="#">
-                        <img src="/img/icon/cart-w.svg" alt="cart">
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <div class="like">
-                    <a href="#">
-                        <img src="/img/icon/heart-w.svg" alt="like">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="/img/image/0001.jpg" alt="product04">
-                </a>
-                <a href="#">
-                    <h2>簡約圖藤</h2>        
-                </a>
-                <span>200NT$</span>
-                <div class="cart">
-                    <a href="#">
-                        <img src="/img/icon/cart-w.svg" alt="cart">
-                    </a>
-                </div>
-            </li>
-        </ul>
         
 
     </div>
