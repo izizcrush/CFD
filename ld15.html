@@ -192,7 +192,7 @@
         }
         /* 更多組合 */
         .button-morefeatured {
-            height: 500px;
+            height: 100px;
             width: 100%;
             margin-top: 50px;
         }
@@ -209,7 +209,41 @@
             align-items: center;
             clear: left;
         }
-        
+
+        .fan-img{
+            margin: auto;       
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .fan-img .container .card{
+            width: 300px;
+            height: 480px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .fan-img .container .card img{
+            margin: auto;
+            padding: 10px; ;
+            display: flex;
+            width: 280px;
+            height: 280px;
+        }
+        .fan-img .container .card h5{
+            margin-left: 10px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: rgb(46, 102, 75);
+        }
+        .fan-img .container .card p{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 8px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: rgb(14, 49, 32);
+        }    
     </style>
 </head>
 <body>
@@ -354,6 +388,54 @@
                  </li>
                 <li>
              </ul>
+             <ul>
+                <li>
+                    <div class="product">
+                         <a href="#">
+                         <img src="/img/image/0004.jpg" class="img" alt="pr01">
+                         </a>
+                         <a href="#">
+                         <h3>簡約圖案</h3>
+                         </a>
+                         <p>199NT$</p>
+                         <div class="cart">
+                             <a href="#">
+                             <img src="img/icon/cart-w.svg"  alt="cart">
+                             </a>
+                         </div>
+                         <div class="like">
+                             <a href="#">
+                             <img src="img/icon/heart-w.svg"  alt="like">
+                             </a>
+                         </div>                    
+                     </div>
+                 </li>
+                <li>
+             </ul>
+             <ul>
+                <li>
+                    <div class="product">
+                         <a href="#">
+                         <img src="/img/image/0003.jpg" class="img" alt="pr01">
+                         </a>
+                         <a href="#">
+                         <h3>簡約圖案</h3>
+                         </a>
+                         <p>199NT$</p>
+                         <div class="cart">
+                             <a href="#">
+                             <img src="img/icon/cart-w.svg"  alt="cart">
+                             </a>
+                         </div>
+                         <div class="like">
+                             <a href="#">
+                             <img src="img/icon/heart-w.svg"  alt="like">
+                             </a>
+                         </div>                    
+                     </div>
+                 </li>
+                <li>
+             </ul>
 
         </div>
         
@@ -387,8 +469,9 @@
         <div class="container">
             <ul>
                 <li>
+                    <img src="img/image/002.jpg" alt="featured1">
                     <a href="#">
-                        <img src="img/image/002.jpg" alt="featured1">
+
                         <h2>極簡系列</h2>
                         <p>簡約的線條構成,極簡冷淡的個性</p>
                     </a>
@@ -425,5 +508,34 @@
     </div>
 </div>           
 <div>
+
+    <!-- 紛絲回圖 -->
+
+    <div class="all-product">
+        <ul>
+            <li>
+                <h1>粉絲回圖</h1>
+            </li>
+        </ul>
+
+    </div>
+<div class="fan-img">
+    <div class="container">
+        <ul>
+            <li>
+                <div class="card">
+                    <a href="#">
+                        <img src="/img/fan/f01.jpg" alt="fan-img01">
+                    </a>                    
+                    <h5>love233412tani</h5>
+                    <p>使用快速，可常常替換，隨心情換圖真的很棒</p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
 </body>
 </html>
